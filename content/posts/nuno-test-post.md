@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: Mountains
+title: Mountains by Nuno
 status: Published
 date: '2018-03-28'
 featuredImage: >-
