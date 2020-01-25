@@ -1,9 +1,9 @@
 ---
 template: HomePage
 slug: ''
-title: Yellowcake
+title: The Golden Healing
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project. Here it will be a little description explaing what is this site about. Change it Araújo!'
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
