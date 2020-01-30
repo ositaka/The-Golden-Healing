@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'BlurMedium';
+    src: url('/public/fonts/subset-BlurMedium.woff2') format('woff2'),
+        url('/public/fonts/subset-BlurMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
 :root {
   --primary: #00c2bd;
   --secondary: #000;
@@ -5,7 +13,7 @@
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
+  --font-primary: 'Blur Medium', sans-serif;
   --font-system: system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
 }
