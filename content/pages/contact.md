@@ -7,7 +7,6 @@ subtitle: This is the contact page subtitle.
 address: '404 James St, Burleigh Heads QLD 4220'
 phone: +351 913 333 210
 email: info@thegoldenhealing.com
-locations: []
 meta:
   description: ''
   title: Contact Page
