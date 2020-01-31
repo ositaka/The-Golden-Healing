@@ -40,7 +40,7 @@ const Nav = ({ siteTitle }) => {
             Blog
           </NavLink>
           <NavLink to="/default/" exact>
-            Default
+            Default Page
           </NavLink>
           <NavLink to="/contact/" exact>
             Contact
