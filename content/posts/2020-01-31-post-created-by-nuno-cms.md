@@ -15,8 +15,6 @@ And here is the real content of the post. You can write as much as you want or y
 
 And here is the real content of the post. You can write as much as you want or your fingers allow. And here is the real content of the post. You can write as much as you want or your fingers allow. 
 
-
-
 # You can also have titles
 
 And here is the real content of the post. You can write as much as you want or your fingers allow. And here is the real content of the post. You can write as much as you want or your fingers allow. 
