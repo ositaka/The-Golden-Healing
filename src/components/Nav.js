@@ -39,8 +39,11 @@ const Nav = ({ siteTitle }) => {
           <NavLink to="/blog/" exact>
             Blog
           </NavLink>
-          <NavLink to="/default/" exact>
-            Default Page
+          <NavLink to="/sessions/" exact>
+            Sessions
+          </NavLink>
+          <NavLink to="/bookings/" exact>
+            Bookings
           </NavLink>
           <NavLink to="/contact/" exact>
             Contact
