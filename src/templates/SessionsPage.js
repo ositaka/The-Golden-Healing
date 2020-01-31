@@ -31,7 +31,7 @@ export const SessionsPageTemplate = ({
 )
 
 const SessionsPage = ({ data: { page } }) => (
-  <SessionsPageTemplate {...page.frontmatter} body={page.html} />
+  <SessionsPageTemplate {...page} {...page.frontmatter} body={page.html} />
 )
 export default SessionsPage
 
