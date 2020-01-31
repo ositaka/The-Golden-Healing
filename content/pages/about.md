@@ -30,4 +30,3 @@ section2: |-
   vestibulum.
 testImage: /images/uploads/mark-chang-74-3.jpg
 ---
-

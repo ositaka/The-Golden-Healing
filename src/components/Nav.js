@@ -36,18 +36,18 @@ const Nav = ({ siteTitle }) => {
           <NavLink to="/about/" exact>
             About
           </NavLink>
-          <NavLink to="/blog/" exact>
-            Blog
-          </NavLink>
           <NavLink to="/sessions/" exact>
             Sessions
           </NavLink>
-          <NavLink to="/bookings/" exact>
-            Bookings
+          <NavLink to="/blog/" exact>
+            Blog
           </NavLink>
           <NavLink to="/contact/" exact>
             Contact
           </NavLink>
+          {/* <NavLink to="/bookings/" exact>
+            Bookings
+          </NavLink> */}
         </div>
         <button
           className="Button-blank Nav--MenuButton"
