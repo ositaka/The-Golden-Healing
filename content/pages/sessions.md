@@ -1,8 +1,8 @@
 ---
 template: SessionsPage
-slug: 'sessions'
+slug: sessions
 title: Sessions
-featuredImage: /images/uploads/colour.jpg
+featuredImage: /images/uploads/nitish-meena-37745.jpg
 subtitle: This is the sessions page subtitle
 meta:
   title: ''
