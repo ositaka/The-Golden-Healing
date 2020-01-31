@@ -1,37 +1,13 @@
-@font-face {
-    font-family: 'BlurMedium';
-    src: url('/public/fonts/subset-BlurMedium.woff2') format('woff2'),
-        url('/public/fonts/subset-BlurMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
 :root {
-  --primary: #00c2bd;
-  --secondary: #000;
+  --primary: rebeccapurple;
+  --secondary: #212121;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: 'Blur Medium', sans-serif;
+  --font-primary: 'Open Sans', sans-serif;
   --font-system: system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
-}
-
-::-webkit-scrollbar {
-  width: 0.4rem;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 3px var(--grey);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-}
-
-::selection {
-  background: rgba(0, 194, 189, 0.6);
 }
 
 html {
@@ -162,11 +138,7 @@ blockquote {
 
 .section {
   width: 100%;
-  padding: 5rem 0;
-  border-bottom: 1px solid #f1f1f1;
-}
-.section:last-child {
-  border: 0;
+  padding: 7.5rem 0;
 }
 .section.thick {
   padding: 10rem 0;

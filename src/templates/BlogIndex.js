@@ -1,38 +1,9 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import { Location } from '@reach/router'
-import qs from 'qs'
+import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
 import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
-import Layout from '../components/Layout'
-
-/**
- * Filter posts by date. Feature dates will be fitered
- * When used, make sure you run a cronejob each day to show schaduled content. See docs
- *
- * @param {posts} object
- */
-export const byDate = posts => {
-  const now = Date.now()
-  return posts.filter(post => Date.parse(post.date) <= now)
-}
-
-/**
- * filter posts by category.
- *
- * @param {posts} object
- * @param {title} string
- * @param {contentType} string
- */
-export const byCategory = (posts, title, contentType) => {
-  const isCategory = contentType === 'postCategories'
-  const byCategory = post =>
-    post.categories &&
-    post.categories.filter(cat => cat.category === title).length
-  return isCategory ? posts.filter(byCategory) : posts
-}
 
 // Export Template for use in CMS preview
 export const BlogIndexTemplate = ({
@@ -41,77 +12,62 @@ export const BlogIndexTemplate = ({
   featuredImage,
   posts = [],
   postCategories = [],
-  enableSearch = true,
   contentType
-}) => (
-  <Location>
-    {({ location }) => {
-      let filteredPosts =
-        posts && !!posts.length
-          ? byCategory(byDate(posts), title, contentType)
-          : []
+}) => {
+  const isCategory = contentType === 'postCategories'
+  const byCategory = post =>
+    post.categories &&
+    post.categories.filter(cat => cat.category === title).length
+  const filteredPosts = isCategory ? posts.filter(byCategory) : posts
 
-      let queryObj = location.search.replace('?', '')
-      queryObj = qs.parse(queryObj)
+  return (
+    <main className="Blog">
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
 
-      if (enableSearch && queryObj.s) {
-        const searchTerm = queryObj.s.toLowerCase()
-        filteredPosts = filteredPosts.filter(post =>
-          post.frontmatter.title.toLowerCase().includes(searchTerm)
-        )
-      }
+      <PageHeader
+        title={title}
+        subtitle={subtitle}
+        backgroundImage={featuredImage}
+      />
 
-      return (
-        <main className="Blog">
-          <PageHeader
-            title={title}
-            subtitle={subtitle}
-            backgroundImage={featuredImage}
-          />
+      {!!postCategories.length && (
+        <section className="section thin">
+          <div className="container">
+            <PostCategoriesNav categories={postCategories} />
+          </div>
+        </section>
+      )}
 
-          {!!postCategories.length && (
-            <section className="section thin">
-              <div className="container">
-                <PostCategoriesNav enableSearch categories={postCategories} />
-              </div>
-            </section>
-          )}
-
-          {!!posts.length && (
-            <section className="section">
-              <div className="container">
-                <PostSection posts={filteredPosts} />
-              </div>
-            </section>
-          )}
-        </main>
-      )
-    }}
-  </Location>
-)
+      {!!posts.length && (
+        <section className="section">
+          <div className="container">
+            <PostSection posts={filteredPosts} />
+          </div>
+        </section>
+      )}
+    </main>
+  )
+}
 
 // Export Default BlogIndex for front-end
-const BlogIndex = ({ data: { page, posts, postCategories } }) => (
-  <Layout
-    meta={page.frontmatter.meta || false}
-    title={page.frontmatter.title || false}
-  >
-    <BlogIndexTemplate
-      {...page}
-      {...page.fields}
-      {...page.frontmatter}
-      posts={posts.edges.map(post => ({
-        ...post.node,
-        ...post.node.frontmatter,
-        ...post.node.fields
-      }))}
-      postCategories={postCategories.edges.map(post => ({
-        ...post.node,
-        ...post.node.frontmatter,
-        ...post.node.fields
-      }))}
-    />
-  </Layout>
+const BlogIndex = ({ data }) => (
+  <BlogIndexTemplate
+    {...data.page}
+    {...data.page.fields}
+    {...data.page.frontmatter}
+    posts={data.posts.edges.map(post => ({
+      ...post.node,
+      ...post.node.frontmatter,
+      ...post.node.fields
+    }))}
+    postCategories={data.postCategories.edges.map(post => ({
+      ...post.node,
+      ...post.node.frontmatter,
+      ...post.node.fields
+    }))}
+  />
 )
 
 export default BlogIndex
@@ -123,16 +79,16 @@ export const pageQuery = graphql`
   ## query name must be unique to this file
   query BlogIndex($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
-      ...Meta
       fields {
         contentType
       }
       frontmatter {
         title
-        excerpt
         template
         subtitle
-        featuredImage
+        featuredImage {
+          ...FluidImage
+        }
       }
     }
 
@@ -148,11 +104,12 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date
             categories {
               category
             }
-            featuredImage
+            featuredImage {
+              ...SmallImage
+            }
           }
         }
       }

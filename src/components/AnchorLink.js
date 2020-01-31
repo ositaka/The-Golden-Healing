@@ -23,6 +23,7 @@ const AnchorLink = ({
     if (toleranceElement) {
       defaultOptions.tolerance =
         document.querySelector(toleranceElement).offsetHeight - 1
+      console.log(defaultOptions.tolerance)
     }
     const moveTo = new MoveTo(Object.assign(defaultOptions, options))
     moveTo.move(document.querySelector(target))

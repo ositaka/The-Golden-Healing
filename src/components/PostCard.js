@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from 'gatsby-link'
+import _map from 'lodash/map'
 
 import Image from './Image'
 import './PostCard.css'

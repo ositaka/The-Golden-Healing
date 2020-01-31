@@ -1,73 +1,79 @@
-## 2.0.12 - 2019-11-01
+## 1.0.0 - 2018-07-18
 
-Removed date-fns and replaced with moment.js  
-Thanks @doakheggeness
+- Gatsbro init
 
-## 2.0.11 - 2019-08-29
+## 0.4.2 - 2018-06-08
 
-Add API key to resolve instagram issue.
+- Meta object field should not be required
 
-## 2.0.10 - 2019-08-01
+## 0.4.1 - 2018-06-06
 
-Change Accordion click event to toggle individual item.
+- Round imgix width request to nearest 100px
 
-## 2.0.9 - 2019-07-26
+## 0.4.0 - 2018-06-06
 
-Add new Popup component - Accepts children :)
+- Improve reusability of <Meta /> component
+- Rename `page` prop to `fields` on pages / posts
+- Update config.yml with meta object for each item
 
-## 2.0.9 - 2019-05-17
+## 0.3.1 - 2018-06-01
 
-Add google tag manager to track routes
-add you tag GMT_add_your_tag_here gatsby-config.js
-Update all packages :) `yarn upgrade --latest`
+- Encode CMS image urls
+- Update config.yml
 
-## 2.0.8 - 2019-05-06
+## 0.3.0 - 2018-06-01
 
-Background Video with title
-Submit to showcase
+- General design updates
+- Improved default logo / favicon
+- Improved default card-og.png
+- Improved contact page layout
+- Update <BackgroundImage />
+- Change normalize.css to modern-normalize
+- Add react-feather icons
+- Remove AOS
 
-## 2.0.7 - 2019-03-27
+## 0.2.9 - 2018-05-30
 
-Upgrade CMS version.
-Fix broken image in preview when title is filled in.
+- IE11 support updates
 
-## 2.0.6 - 2019-01-22
+## 0.2.8 - 2018-05-29
 
-BackgroundVideo Component set poster for mobile width window.
+- Use imgix auto=format for automatic webp conversion
 
-## 2.0.5 - 2019-01-22
+## 0.2.7 - 2018-05-25
 
-Offline support with prefetch 10px images from Uploadcare.
-Single post layout update to remove background image.
+- Update slugify() util function to support plural initialisms
 
-## 2.0.4 - 2019-01-21
+## 0.2.6 - 2018-05-25
 
-New lazy image component and a bunch of errors.
+- Add slugify() util function
 
-- instagram load + cache items
-- video bg z-index
-- post search bar responsiveness
+## 0.2.5 - 2018-05-25
 
-## 2.0.3 - 2019-01-16
+- Upgrade CMS (1.8.2)
+- Update singlePost CMS config
 
-Add background video component with fade in over poster image by default.
-Inline images through markdown editor now use Image component.
+## 0.2.4 - 2018-05-24
 
-## 2.0.2 - 2018-11-06
+- Use strict CMS version (1.8.0)
 
-Add SVG icon component
-It allows you to change color of the icon in css with background of .SVGIcon--icon
+## 0.2.3 - 2018-05-21
 
-## 2.0.1.1 - 2018-10-28
+- Add optional imgix integration for images
+- Return to console.log for build console messages
 
-add accordion
+## 0.2.2 - 2018-05-21
 
-## 2.0.1 - 2018-10-18
+- Use ora for build console message
 
-Configure Uploadcare widget  
-Image component setup  
-Add google maps
+## 0.2.1 - 2018-05-17
 
-## 2.0.0 - 2018-10-15
+- Log netlifySiteUrl when viewing CMS on localhost
 
-Init Yellow cake
+## 0.2.0 - 2018-05-17
+
+- Add CHANGELOG
+- Upgrade dependencies
+- Minor improvements to CMS webpack config
+- Add CMS service worker field
+- Fix typo on <SinglePost />

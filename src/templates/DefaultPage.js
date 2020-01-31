@@ -1,9 +1,8 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
-import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
@@ -13,6 +12,10 @@ export const DefaultPageTemplate = ({
   body
 }) => (
   <main className="DefaultPage">
+    <Helmet>
+      <title>{title}</title>
+    </Helmet>
+
     <PageHeader
       title={title}
       subtitle={subtitle}
@@ -28,24 +31,20 @@ export const DefaultPageTemplate = ({
 )
 
 const DefaultPage = ({ data: { page } }) => (
-  <Layout
-    meta={page.frontmatter.meta || false}
-    title={page.frontmatter.title || false}
-  >
-    <DefaultPageTemplate {...page.frontmatter} body={page.html} />
-  </Layout>
+  <DefaultPageTemplate {...page.frontmatter} body={page.html} />
 )
 export default DefaultPage
 
 export const pageQuery = graphql`
   query DefaultPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
-      ...Meta
       html
       frontmatter {
         title
         subtitle
-        featuredImage
+        featuredImage {
+          ...FluidImage
+        }
       }
     }
   }

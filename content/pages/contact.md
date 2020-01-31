@@ -1,15 +1,12 @@
 ---
 template: ContactPage
 slug: contact
-title: Contact Us
-featuredImage: 'https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/'
-subtitle: Feel free to send us a message.
+title: Contact
+featuredImage: /images/uploads/mark-chang-74-3.jpg
+subtitle: Contact Page has a subtitle
 address: '404 James St, Burleigh Heads QLD 4220'
-phone: +351 913 333 210
-email: info@thegoldenhealing.com
-meta:
-  description: ''
-  title: Contact Page
+phone: 0987 123 456
+email: example@example.com
 ---
 
 # Example contact form

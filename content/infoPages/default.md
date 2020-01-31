@@ -1,12 +1,8 @@
 ---
 template: DefaultPage
 slug: default
-title: Default (exemplo)
-featuredImage: 'https://ucarecdn.com/7ec2ff8c-5ef7-4dd8-b551-baa44d114cc3/'
-meta:
-  description: test meta description
-  noindex: true
-  title: test meta title
+title: Default
+featuredImage: /images/uploads/nitish-meena-37745.jpg
 ---
 
 ## This is the DefaultPage template
