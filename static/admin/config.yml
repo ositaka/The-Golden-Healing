@@ -100,7 +100,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - file: "content/pages/sessions.md"
         label: "Sessions Page"
-        name: "session-page"
+        name: "sessions-page"
         fields:
           - {label: Template, name: template, widget: hidden, default: SessionsPage}
           - {label: Slug, name: slug, widget: hidden, default: ''}
@@ -137,7 +137,6 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
               - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
               - {label: Noindex, name: noindex, widget: boolean, required: false}
-
 
   - name: infoPages
     label: Info Page
