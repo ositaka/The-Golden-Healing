@@ -1,8 +1,8 @@
-siteTitle: Gatsbro
-siteUrl: 'https://gatsbro.netlify.com'
+siteTitle: The Golden Healing
+siteUrl: 'https://thegoldenhealing.com'
 siteDescription: >-
-  A starter project for creating lightning-fast websites with Gatsby and Netlify CMS.
+  A starter project for creating lightning-fast websites with Gatsby and Netlify
+  CMS.
 socialMediaCard:
   image: /images/uploads/card-og.png
-headerScripts: |-
-  <!-- Add your analytics scripts / verification meta here -->
+headerScripts: <!-- Add your analytics scripts / verification meta here -->
