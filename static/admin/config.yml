@@ -100,7 +100,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - file: "content/pages/sessions.md"
         label: "Sessions Page"
-        name: "session-page"
+        name: "sessions-page"
         fields:
           - {label: Template, name: template, widget: hidden, default: SessionsPage}
           - {label: Slug, name: slug, widget: hidden, default: ''}
