@@ -2,7 +2,7 @@
 template: AboutPage
 slug: about
 title: About page title
-featuredImage: /images/uploads/tim-marshall-155597.jpg
+featuredImage: /images/uploads/mandala.jpg
 subtitle: Test subtitle
 section1: >-
   ## Lorem Ipsum
@@ -30,3 +30,4 @@ section2: |-
   vestibulum.
 testImage: /images/uploads/mark-chang-74-3.jpg
 ---
+
