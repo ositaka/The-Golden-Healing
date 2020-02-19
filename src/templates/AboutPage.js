@@ -1,25 +1,12 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { graphql } from 'react'
 
 import PageHeader from '../components/PageHeader'
-import Image from '../components/Image'
-import Content from '../components/Content.js'
-import './AboutPage.css'
+import Content from '../components/Content'
 
 // Export Template for use in CMS preview
-export const AboutPageTemplate = ({
-  title,
-  subtitle,
-  featuredImage,
-  section1,
-  section2,
-  testImage,
-  body
-}) => (
+export const AboutPageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="About">
-    <Helmet>
-      <title>{title}</title>
-    </Helmet>
     <PageHeader
       title={title}
       subtitle={subtitle}
@@ -28,15 +15,7 @@ export const AboutPageTemplate = ({
 
     <section className="section">
       <div className="container">
-        <Content source={section1} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section2} />
-        <p>The image below is a {'<Image />'}</p>
-        <Image src={testImage} alt="Image" />
+        <Content source={body} />
       </div>
     </section>
   </main>
@@ -54,16 +33,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        template
         subtitle
         featuredImage {
           ...FluidImage
         }
-        testImage {
-          ...FluidImage
-        }
-        section1
-        section2
       }
     }
   }

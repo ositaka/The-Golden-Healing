@@ -1,9 +1,9 @@
 ---
 template: SinglePost
-title: Gatsby Test
+title: Exemplo de Post
 status: Published
-date: '2018-07-18'
-featuredImage: /images/uploads/nitish-meena-37745.jpg
+date: '2020-01-18'
+featuredImage: /images/uploads/mandala.jpg
 excerpt: This is the excerpt
 categories:
   - category: Updates
