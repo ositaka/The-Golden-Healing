@@ -1,8 +1,8 @@
 ---
 template: BookingsPage
-slug: 'bookings'
+slug: bookings
 title: Bookings
-featuredImage: /images/uploads/colour.jpg
+featuredImage: /images/uploads/mandala.jpg
 subtitle: This is the bookings page subtitle
 meta:
   title: ''
