@@ -2,7 +2,7 @@
 template: BlogIndex
 slug: blog
 title: Blog
-featuredImage: /images/uploads/ng-32703.jpg
+featuredImage: /images/uploads/teddy-kelley-106391.jpg
 subtitle: Blog subtitle
 ---
 
