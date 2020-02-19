@@ -35,3 +35,8 @@
   line-height: 1;
   margin: 0.5em 0;
 }
+
+.PostCard--Category,
+.PostCard--Excerpt {
+  font-family: var(--font-secondary);
+}

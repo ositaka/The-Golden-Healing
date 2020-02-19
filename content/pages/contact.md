@@ -6,7 +6,7 @@ featuredImage: /images/uploads/mandala.jpg
 subtitle: Contact Page has a subtitle
 address: '404 James St, Burleigh Heads QLD 4220'
 phone: 0987 123 456
-email: example@example.com
+email: info@thegoldenhealing.com
 ---
 
 # Example contact form
