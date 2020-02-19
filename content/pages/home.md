@@ -2,8 +2,9 @@
 template: HomePage
 slug: ''
 title: Golden Healing
-featuredImage: /images/uploads/colour.jpg
-subtitle: Welcome! 👋 Feel free to contact us for more info.
+featuredImage: /images/uploads/mandala.jpg
+subtitle: "Welcome! \U0001F44B Feel free to contact us for more info."
 meta:
-  title: 'The Golden Healing'
+  title: The Golden Healing
 ---
+This website is under construction. Please come back soon.
