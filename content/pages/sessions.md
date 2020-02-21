@@ -1,9 +1,9 @@
 ---
 template: SessionsPage
 slug: sessions
-title: Sessions
+title: 'Distance Healing '
 featuredImage: /images/uploads/mandala.jpg
-subtitle:
+subtitle: Distance Healing Sessions
 meta:
   title: ''
 ---
