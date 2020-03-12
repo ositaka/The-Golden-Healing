@@ -31,19 +31,19 @@ const Nav = ({ siteTitle }) => {
         </Link>
         <div className="Nav--Links">
           <NavLink to="/" exact>
-            Home
+            The Golden Healing
           </NavLink>
-          <NavLink to="/about/" exact>
+          {/* <NavLink to="/about/" exact>
             About
+          </NavLink> */}
+          <NavLink to="/distance-sessions/" exact>
+            Distance Sessions
           </NavLink>
-          <NavLink to="/sessions/" exact>
-            Sessions
-          </NavLink>
-          <NavLink to="/blog/" exact>
+          {/* <NavLink to="/blog/" exact>
             Blog
-          </NavLink>
-          <NavLink to="/contact/" exact>
-            Contact
+          </NavLink> */}
+          <NavLink to="/bookings/" exact>
+            Bookings
           </NavLink>
           {/* <NavLink to="/bookings/" exact>
             Bookings

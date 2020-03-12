@@ -1,20 +1,21 @@
 ---
 template: ContactPage
-slug: contact
-title: Contact
+slug: bookings
+title: Bookings
 featuredImage: /images/uploads/mandala.jpg
-subtitle: Contact Page has a subtitle
-address: '404 James St, Burleigh Heads QLD 4220'
-phone: 0987 123 456
+subtitle: Book here your session
+address: ''
+phone: +351 913 333 210
 email: info@thegoldenhealing.com
 ---
 
-# Example contact form
+# Request an Appointment
 
-This form is setup to use Netlify's form handling:
+To request an appointment, please fill out the form:
 
-- the form action is set to the current absolute url: `action: '/contact/'`
-- a name attribute is sent with the form's data `'form-name': 'Contact'`
-- netlify data attributes are added to the form `data-netlify data-netlify-honeypot`
+- we need your basic personal info
+- choose the issues to heal
+- write a little message, introducing yourself and your issues, so we can get to know more info about your situation
+- choose your prefered date and time for the session (it will be confirmed after submission)
 
-Find out more in the [Netlify Docs](https://www.netlify.com/docs/form-handling/).
+If you have any other questions about the bookings or our sessions, please contact us:

@@ -14,7 +14,7 @@
 
 .PageHeader--Title {
   font-size: 6rem;
-  margin-bottom: 0;
+  line-height: 1;
 }
 
 .PageHeader--Subtitle {

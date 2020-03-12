@@ -34,7 +34,7 @@ export const ContactPageTemplate = ({
           <Content source={body} />
 
           <div className="Contact--Details">
-            {address && (
+            {/* {address && (
               <a
                 className="Contact--Details--Item"
                 href={`https://www.google.com.au/maps/search/${encodeURI(
@@ -45,7 +45,7 @@ export const ContactPageTemplate = ({
               >
                 <MapPin /> {address}
               </a>
-            )}
+            )} */}
             {phone && (
               <a className="Contact--Details--Item" href={`tel:${phone}`}>
                 <Smartphone /> {phone}

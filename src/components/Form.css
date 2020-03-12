@@ -11,6 +11,10 @@
   margin-top: 2rem;
 }
 
+.Form p {
+  width: 100%;
+}
+
 .Form--Label {
   width: 100%;
   display: flex;
@@ -36,6 +40,43 @@
 .Form--Select {
   background: none;
   appearance: none;
+}
+
+.Form--File {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.Form--File + label {
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: 1px solid #bababa;
+  padding: 1.25rem 2rem;
+  border-radius: var(--borderRadius);
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Form--File:focus + label,
+.Form--File + label:hover {
+  background-color: var(--lightGrey);
+  border-radius: var(--borderRadius);
+}
+
+.Form--File + label * {
+  pointer-events: none;
+}
+
+.Form--File + label svg {
+  position: absolute;
+  right: 2.15rem;
+  top: 1.65rem;
+  opacity: 0.5;
 }
 
 .Form--Label.has-arrow:after {

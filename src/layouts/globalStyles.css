@@ -66,6 +66,11 @@ h6 {
   font-weight: 500;
 }
 
+hr {
+  margin: 6rem 0;
+  opacity: 0.2;
+}
+
 pre {
   background: var(--lightGrey);
   line-height: 1.45;
@@ -94,12 +99,21 @@ pre code:after {
 }
 blockquote {
   margin-left: 0;
-  padding-left: 1em;
+  padding-left: 1.5em;
   font-family: var(--font-primary);
-  line-height: 1.1;
+  line-height: 1.6;
   font-size: 1em;
+  font-weight: 300;
   font-style: italic;
-  border-left: 2px solid var(--primary);
+  letter-spacing: 1px;
+  border-left: 6px solid var(--primary);
+}
+blockquote p {
+  opacity: 0.7;
+}
+blockquote cite {
+  font-size: 0.85em;
+  font-style: normal;
 }
 
 /* Utility Classes */
