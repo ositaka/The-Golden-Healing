@@ -1,6 +1,6 @@
 {
-  "name": "gatsbro",
-  "description": "An opinionated starter project for creating lightning-fast websites with Gatsby and Netlify CMS",
+  "name": "the-golden-healing",
+  "description": "",
   "version": "1.0.0",
   "dependencies": {
     "date-fns": "^1.29.0",
@@ -33,9 +33,7 @@
     "react-helmet": "^5.2.0",
     "react-markdown": "^3.3.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

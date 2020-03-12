@@ -87,7 +87,7 @@ class Form extends React.Component {
           <select
             className="Form--Input Form--Select"
             name="type"
-            defaultValue="Issue to be heal"
+            defaultValue="Issue to heal"
             required
           >
             <option disabled hidden>
