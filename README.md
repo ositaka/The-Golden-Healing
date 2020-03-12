@@ -2,6 +2,8 @@
 
 [x] update contact form
 [] review selectbox
+[] Add a working Photo upload input
+
 [-] left text
 [] test form with netlify
 [x] update Homepage
