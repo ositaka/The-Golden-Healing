@@ -91,7 +91,7 @@ class Form extends React.Component {
             required
           >
             <option disabled hidden>
-              Issue to be heal
+              Issue to heal
             </option>
             <option>Physical issue</option>
             <option>Mental issue</option>
